@@ -1,48 +1,45 @@
 "use strict";
 
-const backgroundColor = "#261f32";
-const magenta = "#f2ebe0";
-const cyan = "#ff7f32";
-const brightBlack = "#f825a4";
-const gray = "#ada8a8";
-const brightWhite = "#f2ebe0";
-const foregroundColor = "#f2ebe0";
-const green = "#66edad";
-const yellow = "#ff7f32";
-const black = "#201b29";
-const blue = "#f825a4";
-const red = "#f625a3";
+const black = "#262335";
+const magenta = "#ff7edb";
+const cyan = "#36f9f6";
+const pink = "#f825a4";
+const gray = "#b6b1b1";
+const white = "#f2ebe0";
+const green = "#72f1b8";
+const orange = "#ff8b39";
+const red = "#fe4450";
 
 exports.decorateConfig = config => {
   return Object.assign({}, config, {
-    backgroundColor,
-    foregroundColor,
+    backgroundColor: black,
+    foregroundColor: white,
     borderColor: black,
-    cursorColor: brightBlack,
+    cursorColor: pink,
     colors: {
-      black,
-      red,
-      green,
-      yellow,
-      blue,
+      black: black,
+      red: red,
+      green: green,
+      yellow: orange,
+      blue: cyan,
       magenta,
       cyan,
       gray,
 
-      // bright
-      brightBlack,
-      red,
-      green,
-      yellow,
-      blue,
-      magenta,
-      cyan,
-      brightWhite
+      // light
+      lightBlack: pink,
+      lightRed: pink,
+      lightGreen: green,
+      lightYellow: orange,
+      lightBlue: cyan,
+      lightMagenta: magenta,
+      lightCyan: cyan,
+      lightWhite: white,
     },
     css: `
 			${config.css || ""}
 			.tabs_list .tab_tab.tab_active .tab_text  {
-				background: ${backgroundColor};
+				background: ${black};
 			}
 
 			.tab_active:before {

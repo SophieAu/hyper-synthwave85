@@ -1,0 +1,13 @@
+/* hyper js theme colors */
+body {
+  --black: #262335;
+  --magenta: #ff7edb;
+  --cyan: #36f9f6;
+  --pink: #f825a4;
+  --gray: #b6b1b1;
+  --white: #f2ebe0;
+  --green: #72f1b8;
+  --orange: #ff8b39;
+  --blue: #495495;
+  --red: #fe4450;
+}
